@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Modal & Dark Mode</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header class="header">
+
+        <div class="header-overlay">
+
+            <nav class="navbar">
+
+                <div class="logo">
+                    MOUTH<span>WASHING</span>
+                </div>
+
+                <button
+                    id="darkModeBtn"
+                    class="dark-mode-btn"
+                    aria-label="Ativar modo escuro"
+                    title="Alternar tema"
+                >
+                    🌙
+                </button>
+
+            </nav>
+
+
+            <div class="hero">
+
+                <p class="hero-subtitle">
+                    PSYCHOLOGICAL HORROR
+                </p>
+
+                <h1>
+                    MODAL
+                    <span>&</span>
+                    DARK MODE
+                </h1>
+
+                <p class="hero-description">
+                    Projeto utilizando HTML, CSS e JavaScript
+                    para demonstrar manipulação do DOM,
+                    modal e alteração dinâmica de tema.
+                </p>
+
+                <button
+                    id="openModal"
+                    class="main-button"
+                >
+                    EXPLORAR
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================== -->
+
+    <main>
+
+        <section class="about">
+
+            <div class="section-title">
+
+                <p>PROJETO</p>
+
+                <h2>
+                    Sobre o projeto
+                </h2>
+
+            </div>
+
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <h3>
+                        HTML
+                    </h3>
+
+                    <p>
+                        Responsável pela estrutura e organização
+                        dos elementos da página.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <h3>
+                        CSS
+                    </h3>
+
+                    <p>
+                        Responsável pelo visual, animações,
+                        responsividade e temas da interface.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Controla o modal, o Dark Mode
+                        e as interações com o usuário.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             EXPERIÊNCIA
+        ========================== -->
+
+        <section class="experience">
+
+            <div class="experience-content">
+
+                <p class="small-title">
+                    INTERAÇÃO
+                </p>
+
+                <h2>
+                    Uma interface simples,
+                    <span>mas interativa.</span>
+                </h2>
+
+                <p>
+                    Clique no botão abaixo para abrir uma janela
+                    modal utilizando JavaScript.
+                </p>
+
+                <button
+                    id="openModalSecond"
+                    class="secondary-button"
+                >
+                    ABRIR MODAL
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Projeto desenvolvido para estudo de
+            HTML, CSS e JavaScript.
+        </p>
+
+        <span>
+            MODAL & DARK MODE
+        </span>
+
+    </footer>
+
+
+
+    <!-- =========================
+         MODAL
+    ========================== -->
+
+    <div
+        id="modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+    >
+
+        <div class="modal-box">
+
+            <button
+                id="closeModal"
+                class="close-modal"
+                aria-label="Fechar modal"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-icon">
+                ⚠
+            </div>
+
+
+            <p class="modal-small-title">
+                MENSAGEM DO SISTEMA
+            </p>
+
+
+            <h2 id="modalTitle">
+                Você encontrou o modal.
+            </h2>
+
+
+            <p>
+                Esta janela foi criada utilizando HTML,
+                estilizada com CSS e controlada por JavaScript.
+            </p>
+
+
+            <p>
+                Você pode fechá-la clicando no botão abaixo,
+                no X, fora da janela ou pressionando
+                a tecla ESC.
+            </p>
+
+
+            <button
+                id="confirmModal"
+                class="modal-button"
+            >
+                ENTENDI
+            </button>
+
+        </div>
+
+    </div>
+    
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
